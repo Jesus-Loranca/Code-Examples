@@ -1,0 +1,135 @@
+/***************************************\
+               CALLSTRAKT
+\***************************************/
+
+.callstrakt-wrapper {
+    text-align: center;
+    padding: 20px;
+    z-index: 9999;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.callstrakt-wrapper .callstrakt-img {
+    border-radius: 50%;
+}
+
+.callstrakt-wrapper .callstrakt-close {
+    cursor: pointer;
+}
+
+/***************************************\
+            CALLSTRAKT - BAR
+\***************************************/
+
+.callstrakt-bar {
+    width: 100%;
+}
+
+.callstrakt-bar .callstrakt-img {
+    max-width: 50px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.callstrakt-bar .callstrakt-text {
+    display: inline-block;
+    margin: 0 5% 0 2.5%;
+    vertical-align: middle;
+}
+
+.callstrakt-bar .callstrakt-title {
+    display: inline-block;
+    font-size: 1.25em;
+    font-weight: bold;
+    padding-right: 15px;
+}
+
+.callstrakt-bar p {
+    display: inline-block;
+}
+
+.callstrakt-bar .callstrakt-button {
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+.callstrakt-bar .callstrakt-close {
+    font-size: 2em;
+    vertical-align: top;
+    padding-left: 2.5%;
+}
+
+.callstrakt-bar__top {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.callstrakt-bar__bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+/***************************************\
+          CALLSTRAKT - SQUARE
+\***************************************/
+
+.callstrakt-square {
+    width: 15%;
+    padding: 25px;
+    min-width: 400px;
+}
+
+.callstrakt-square .callstrakt-img {
+    max-width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.callstrakt-square .callstrakt-text {
+    display: block;
+    margin: 10% 0 15% 0;
+}
+
+.callstrakt-square .callstrakt-title {
+    display: block;
+    font-size: 1.25em;
+    font-weight: bold;
+    padding-right: 15px;
+}
+
+.callstrakt-square p {
+    display: block;
+    margin-top: 5%;
+}
+
+.callstrakt-square .callstrakt-button {
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.callstrakt-square .callstrakt-close {
+    font-size: 1em;
+    vertical-align: top;
+    padding-right: 2.5%;
+    float: right;
+}
+
+.callstrakt-square__left {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+}
+
+.callstrakt-square__right {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+}
