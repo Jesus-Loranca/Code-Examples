@@ -1,0 +1,127 @@
+{% extends "partials/_layout.njk" %}
+
+{% block header %}
+<header id="site-header" class="global-header max-width">
+    <div class="c-header__container">
+        <a class="fr brand-logo-link" href="https://nature.ca/fr/accueil">
+            <img src="{{vars.publicPath}}/img/cmn-logo.png" class="main-logo" alt="Logo : Musée canadien de la nature."/>
+            <img src="{{vars.publicPath}}/img/no-text-logo.png" class="notext-logo" alt="Logo : Musée canadien de la nature."/>
+        </a>
+
+        <a class="en brand-logo-link" href="https://nature.ca/en/home">
+            <img src="{{vars.publicPath}}/img/logo-en.png" class="main-logo" alt="Logo: Canadian Museum of Nature."/>
+            <img src="{{vars.publicPath}}/img/no-text-logo.png" class="notext-logo" alt="Logo: Canadian Museum of Nature."/>
+        </a>
+
+        {% if vars.language === 'en' %}
+            <nav class="c-global-nav c-global-nav--desktop">
+                <ul>
+                    <li class="french-lang"><a href="https://mon.nature.ca/events?when=aujourdhui-et-demain">Français</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/events?when=today-and-tomorrow#dynamic-links">Tickets</a></li>
+                    <li><a href="https://nature.ca/en/about-us/support-museum/membership/buy-membership">Memberships</a></li>
+                    <li><a href="/donate/contribute2">Donations</a></li>
+                    <li><a href="/gift/add">Gift Certificates</a></li>
+                    <li><a href="https://nature.ca/en/plan-your-visit">Plan Your Visit</a></li>
+                </ul>
+            </nav>
+
+            <div class="c-global-head__expand">
+                <nav class="c-global-nav">
+                    <ul>
+                        <li><a href="/events?when=today-and-tomorrow#dynamic-links">Tickets</a></li>
+                        <li><a href="https://nature.ca/en/about-us/support-museum/membership/buy-membership">Memberships</a></li>
+                        <li><a href="/donate/contribute2">Donations</a></li>
+                        <li><a href="/gift/add">Gift Certificates</a></li>
+                        <li><a href="https://nature.ca/en/plan-your-visit">Plan Your Visit</a></li>
+                        <li class="logout"><a href="/account/logout">Log out</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <ul class="lang-mobile">
+                <li class="french-lang"><a href="https://mon.nature.ca/events?when=aujourdhui-et-demain">Français</a></li>
+            </ul>
+
+            <div class="c-global-nav-toggle js-global-nav-toggle">
+                <span class="c-global-nav-toggle__label">MENU</span>
+                <div class="c-hamburger c-global-nav-toggle__hamburger">
+                    <span></span><span></span><span></span><span></span>
+                </div>
+            </div>
+        {% elif vars.language === 'fr' %}
+            <nav class="c-global-nav c-global-nav--desktop">
+                <ul>
+                    <li class="english-lang"><a href="https://my.nature.ca/events?when=today-and-tomorrow">English</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/events?when=aujourdhui-et-demain#dynamic-links">Billets</a></li>
+                    <li><a href="https://nature.ca/fr/sujet-musee/appuyez-musee/devenez-membre/adherez-en-ligne">Adhésions</a></li>
+                    <li><a href="/donate/contribute2">Dons</a></li>
+                    <li><a href="/gift/add">Chèques-cadeaux</a></li>
+                    <li><a href="https://nature.ca/fr/planifiez-votre-visite">Planifiez votre visite</a></li>
+                </ul>
+            </nav>
+
+            <div class="c-global-head__expand">
+                <nav class="c-global-nav">
+                    <ul>
+                        <li><a href="/events?when=aujourdhui-et-demain#dynamic-links">Billets</a></li>
+                        <li><a href="https://nature.ca/fr/sujet-musee/appuyez-musee/devenez-membre/adherez-en-ligne">Adhésions</a></li>
+                        <li><a href="/donate/contribute2">Dons</a></li>
+                        <li><a href="/gift/add">Chèques-cadeaux</a></li>
+                        <li><a href="https://nature.ca/fr/planifiez-votre-visite">Planifiez votre visite</a></li>
+                        <li class="logout"><a href="/account/logout">Déconnexion</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <ul class="lang-mobile">
+                <li class="english-lang"><a href="https://my.nature.ca/events?when=today-and-tomorrow">English</a></li>
+            </ul>
+
+            <div class="c-global-nav-toggle js-global-nav-toggle">
+                <span class="c-global-nav-toggle__label">MENU</span>
+                <div class="c-hamburger c-global-nav-toggle__hamburger">
+                    <span></span><span></span><span></span><span></span>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</header>
+{% endblock %}
+
+{% block footer %}
+<footer id="site-footer" class="global-footer max-width">
+    <div class="footer-content">
+        <div class="fr">
+            <h3>Musée canadien de la nature : Explorer notre avenir naturel</h3>
+            <div class="address">
+                240, rue McLeod<br/>
+                Ottawa (Ontario) Canada<br/>
+                (à l'angle de la rue Metcalfe)
+            </div>
+            <div class="email">
+                Courriel: <a href="mailto:tickets-billets@nature.ca">tickets-billets@nature.ca</a>
+            </div>
+        </div>
+        <div class="en">
+            <h3>Canadian Museum of Nature: Exploring our natural future</h3>
+            <div class="address">
+                240 McLeod Street<br/>
+                Ottawa, Ontario, Canada<br/>
+                (corner of Metcalfe Street)
+            </div>
+            <div class="email">
+                Email: <a href="mailto:tickets-billets@nature.ca">tickets-billets@nature.ca</a>
+            </div>
+        </div>
+    </div>
+    <div class="sub-footer">
+        <a href="https://nature.ca/fr/droit-auteur" class="fr">&copy; Musée canadien de la nature</a> <a href="https://nature.ca/fr/plan-du-site" class="fr">Plan du site</a> <a href="https://nature.ca/fr/termes-conditions/transactions-en-ligne" class="fr">Termes et conditions</a>
+        <a href="https://nature.ca/en/copyright" class="en">&copy; Canadian Museum of Nature</a> <a href="https://nature.ca/en/sitemap" class="en">Site Map</a> <a href="https://nature.ca/en/terms-conditions/online-transactions" class="en">Terms and Conditions</a>
+        <div class="img-container"><img src="{{vars.publicPath}}/img/canada_logo.png" alt="Symbol of the Government of Canada" /></div>
+    </div>
+</footer>
+{% endblock %}
